@@ -1,11 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solutions</title>
+    <!-- daisyUI cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom color  -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'free-primary': '#B68C5A',
+                
+              }
+            }
+          }
+        }
+    </script>
 </head>
 <body>
-    
+    <!-- header section start -->
+    <header class="container mx-auto">
+
+        <!-- nave section -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 space-y-4">
+                  <li>Home</li>
+                  <li>Services</li>
+                  <li>Cases</li>
+                  <li>Blog</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+                <img class="w-24" src="images/logo2.png" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <div class="breadcrumbs">
+                    <ul class="space-x-5">
+                      <li>Home</li>
+                      <li>Services</li>
+                      <li>Cases</li>
+                      <li>Blog</li>
+                      <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-[#B68C5A] text-white">Free Consultation</a>
+            </div>
+          </div>
+    </header>
+
+    <!-- Main section start  -->
+    <main>
+
+    </main>
+
+    <!-- footer section  -->
+    <footer>
+
+    </footer>
 </body>
 </html>
